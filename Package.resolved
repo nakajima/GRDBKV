@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "grdb.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/groue/GRDB.swift",
+      "state" : {
+        "revision" : "7b63ddf54232db97943759e2b022cf61c5d9e745",
+        "version" : "6.5.0"
+      }
+    },
+    {
+      "identity" : "messagepacker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hirotakan/MessagePacker",
+      "state" : {
+        "revision" : "d60363742752adc3e9efdf57dc26317945d0d2f4",
+        "version" : "0.4.6"
+      }
+    }
+  ],
+  "version" : 2
+}
