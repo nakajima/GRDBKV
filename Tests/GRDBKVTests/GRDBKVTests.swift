@@ -22,6 +22,12 @@ final class GRDBKVTests: XCTestCase {
 		XCTAssertEqual("world", KV.shared.get("hello"))
 	}
 
+	func testSetGetBool() throws {
+		try KV.shared.set("huh", true)
+
+		XCTAssertEqual(true, KV.shared.get("huh"))
+	}
+
 	func testCanBackProperty() throws {
 		try KV.shared.set("foo", "bar")
 
@@ -34,7 +40,6 @@ final class GRDBKVTests: XCTestCase {
 		XCTAssertEqual("fizz", KV.shared.get("foo"))
 		let model2 = TestModel()
 
-		print("SHARED ID IN Test: \(KV.shared.id.uuidString)")
 		XCTAssertEqual("fizz", model.foo)
 		XCTAssertEqual("fizz", model2.foo)
 	}
